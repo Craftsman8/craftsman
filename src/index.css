@@ -1,0 +1,28 @@
+h1 {
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: 0px 2px 2px grey;
+}
+
+p {
+    color:black;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.links {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.home {
+    background-color: rgb(233, 253, 253);
+    width: 40em;
+    border:  2px solid black ;
+    margin-left: 25%;
+}
