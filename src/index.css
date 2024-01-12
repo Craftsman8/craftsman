@@ -20,10 +20,11 @@ p {
     background-color: skyblue;
     width: 20em;
     height: 9em;
-    border:  3px solid black ;
+    border:  3px solid navy;
     margin-left: 2%;
     margin-top: 2%;
     padding: 1% 0% 1% 0%;
+    box-shadow: 5px 5px 10px 3px grey;
 }
 
 .home {
@@ -36,7 +37,7 @@ p {
 .BlogDetails {
     background-color: skyblue;
     width: 30em;
-    border:  3px solid black ;
+    border:  3px solid navy ;
     margin-left: 62%;
     margin-top: -14.5%;
 }
@@ -50,7 +51,7 @@ p {
     background-color: skyblue;
     width: 20em;
     height: 9em;
-    border:  3px solid black ;
+    border:  3px solid navy ;
     margin-left: 32%;
     margin-top: -13%;
     padding: 1% 0% 1% 0%;
@@ -63,7 +64,7 @@ p {
     margin-top: 0%;
     background-color: navy;
     width: 20em;
-    border:  3px solid black ;
+    border:  3px solid skyblue ;
     margin-left: -50%;
     margin-top: 20%;
 }
@@ -75,7 +76,7 @@ p {
     margin-top: 0%;
     background-color: navy;
     width: 20em;
-    border:  3px solid black ;
+    border:  3px solid skyblue;
     margin-left: 55%;
     margin-top: -38.8%;
 }
