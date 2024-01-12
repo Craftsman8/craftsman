@@ -1,8 +1,8 @@
-h1 {
-    color:black;
+h2 {
+    color:navy;
     font-weight: bold;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     text-shadow: 0px 2px 2px grey;
 }
 
@@ -12,17 +12,70 @@ p {
     text-align: center;
 }
 
-.links {
+.Navbar {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0%;
+    background-color: skyblue;
+    width: 20em;
+    height: 9em;
+    border:  3px solid black ;
+    margin-left: 2%;
+    margin-top: 2%;
+    padding: 1% 0% 1% 0%;
+}
+
+.home {
+    background-color: skyblue;
+    width: 40em;
+    border:  3px solid black;
+    margin-left: 25%;
+}
+
+.BlogDetails {
+    background-color: skyblue;
+    width: 30em;
+    border:  3px solid black ;
+    margin-left: 62%;
+    margin-top: -14.5%;
+}
+
+.Sidebar {
     color: black;
     font-size: large;
     font-weight: bold;
     text-align: center;
     margin-top: 0%;
+    background-color: skyblue;
+    width: 20em;
+    height: 9em;
+    border:  3px solid black ;
+    margin-left: 32%;
+    margin-top: -13%;
+    padding: 1% 0% 1% 0%;
 }
 
-.home {
-    background-color: rgb(233, 253, 253);
-    width: 40em;
-    border:  2px solid black ;
-    margin-left: 25%;
+.categories {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0%;
+    background-color: navy;
+    width: 20em;
+    border:  3px solid black ;
+    margin-left: -50%;
+    margin-top: 20%;
+}
+
+.tags {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0%;
+    background-color: navy;
+    width: 20em;
+    border:  3px solid black ;
+    margin-left: 55%;
+    margin-top: -38.8%;
 }
