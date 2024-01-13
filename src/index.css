@@ -13,7 +13,6 @@
     height: 2.5em;
     box-shadow: 2px 2px 3px 2px grey;
     cursor: pointer;
-    
 }
 
 .Button button:hover {
@@ -22,15 +21,12 @@
 }
 
 button.clicked {
-    
     transition: all 0.4s ease-in-out ;
-    font-size: bold;
     border:  3px solid navy;
     align-content: center;
     width: 15em;
     height: 2.5em;
     box-shadow: 2px 2px 3px 2px grey;
-    
 }
 
 h2 {
