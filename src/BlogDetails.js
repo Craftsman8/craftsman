@@ -2,9 +2,12 @@ const BlogDetails = () => {
 
     const details="This blog is a sample test, nested directly into my App Component."
     const video="click the link below to view the previous meeting recording"
+    function handleClick(){
+        console.log("the user as clicked me")
+    }
     return ( 
         <div className="BlogDetails">
-            <h2>BlogDetails component</h2>
+            <h2 onClick={handleClick}>BlogDetails component</h2>
             <p className="details">{details}</p>
             <p className="video">{video}</p>
             <h2 style={{

@@ -4,10 +4,13 @@ const Home = () => {
     const likes= 9760;
     return ( 
         <div className="home">
-            <h2>This is my Homepage component</h2>
-            <p className="title">{title}</p>
-            <p className="likes">{likes} Likes</p>
-            <p id="random">{Math.random() * 10}</p> 
+            <h2 style={{
+                color: "gold",
+                textShadow: "0px 2px 2px black",
+            }}>This is my Homepage component</h2>
+            <h4 className="title">{title}</h4>
+            <h4 className="likes">{likes} Likes</h4>
+            <h4 id="random">{Math.random() * 10}</h4> 
         </div>
      );
 }
