@@ -1,16 +1,16 @@
 import { useState } from "react";
 
 const Toggle = () => {
-    const [ count, setCount ] = useState("click me!")
+    const [ buttonText, setButtonText ] = useState("click me!")
 
-    function handleClick() {
+    function handleButtonClick() {
         console.log("The user has clicked me")
-        setCount("Thank you for clicking me")
+        setButtonText("Thank you for clicking me")
     }
     return ( 
         <div className="Button">
             <center>
-            <button onClick={handleClick} className={count === "Click me!" ? "" : "clicked"}>{count}</button>
+            <button onClick={handleButtonClick} className={buttonText === "Click me!" ? "" : "clicked"}>{buttonText}</button>
             </center>
         </div>
      );

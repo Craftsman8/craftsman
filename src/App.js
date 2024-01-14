@@ -19,12 +19,10 @@ function App() {
         }}>My App Component</h1>
       <Home/>
       <Navbar />
-      </div>
       <BlogDetails />
       <Sidebar/>
-      <div>
       <Toggle />
-    </div>
+      </div>
     </div>
 
   );
