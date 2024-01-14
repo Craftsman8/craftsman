@@ -9,7 +9,7 @@
     border:  3px solid skyblue;
     border-radius: 20px;
     align-content: center;
-    width: 8em;
+    width: fit-content;
     height: 2.5em;
     box-shadow: 2px 2px 3px 2px grey;
     cursor: pointer;
@@ -24,7 +24,7 @@ button.clicked {
     transition: all 0.4s ease-in-out ;
     border:  3px solid navy;
     align-content: center;
-    width: 15em;
+    width: fit-content;
     height: 2.5em;
     box-shadow: 2px 2px 3px 2px grey;
 }
