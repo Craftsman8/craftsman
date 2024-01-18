@@ -1,4 +1,6 @@
 import BlogDetails from './BlogDetails.js';
+import Components from './Components.js';
+import Features from './Features.js';
 import Home from './Home.js';
 import Navbar from './Navbar.js';
 import Sidebar from './Sidebar.js';
@@ -17,14 +19,15 @@ function App() {
           marginTop: "1%",
           textShadow: "0px 2px 2px black",
         }}>My App Component</h1>
+        </div>
       <Home/>
       <Navbar />
       <BlogDetails />
       <Sidebar/>
       <Toggle />
-      </div>
+      <Features/>
+      <Components />
     </div>
-
   );
 }
 
