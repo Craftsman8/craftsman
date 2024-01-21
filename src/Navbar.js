@@ -8,7 +8,6 @@ const Navbar = () => {
           fontWeight: "bold",
           textAlign: "center",
           marginTop: "0%",
-          textShadow: "0px 2px 2px grey",
         }}>Navbar Components</h2>
       
             <div className="links">
