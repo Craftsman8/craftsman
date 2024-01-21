@@ -35,14 +35,15 @@ const Components = () => {
 
     return ( 
         <div className="component">
+            <center>
             <h2>Top Professionals</h2>
             {components.map((component, index)=>(
-                <center>
                 <div className="component-slide" key={component.id}>
                     <h2>{component.title}</h2>
                     <p>By: {component.author}</p>
-                </div></center>
+                </div>
             ))}
+            </center>
         </div>
      );
 }
