@@ -9,6 +9,30 @@ const Components = () => {
             {id: 4, author: "Engr. Tola", title: "Painting", body: "lorem ipsum..."},
         ]
     )
+
+    const services = [ 'Artworks', 'Screeding', 'Stickers', 'Frames', 'Flex-Banners', 'Awards', 'Stamp']
+
+    const otherServices = () => {
+
+        services.push('Wallpaper')
+
+        services.forEach((service, index) => {
+
+            let output = `The name of service ${index + 1} is ${service}`
+            console.log(output)
+
+        })
+        
+        services.pop()
+        console.log(services)
+        console.log(services.slice(-6))
+        services.splice(5, 0, 'Pencil-Works')
+        console.log(services)
+
+    }
+    
+    otherServices()
+
     return ( 
         <div className="component">
             <h2>Top Professionals</h2>

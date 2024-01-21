@@ -5,8 +5,8 @@ const Home = () => {
     return ( 
         <div className="home">
             <h2 style={{
-                color: "gold",
-                textShadow: "0px 2px 2px black",
+                color: "navy",
+                textShadow: "none",
             }}>This is my Homepage component</h2>
             <h4 className="title">{title}</h4>
             <h4 className="likes">{likes} Likes</h4>

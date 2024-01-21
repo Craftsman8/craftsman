@@ -3,11 +3,10 @@ const Categories = () => {
 
         <div className="Categories">
             <h2 style={{
-                color: "gold",
-                textShadow: "0px 2px 2px black",
+                color: "navy",
             }}>My Categories</h2>
             <p style={{
-                color: "white",
+                color: "black",
             }}>this is the categories component under my Sidebar component</p>
         </div>
 

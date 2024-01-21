@@ -36,7 +36,7 @@ h2 {
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
-    text-shadow: 0px 2px 2px rgb(139, 54, 54);
+    /* text-shadow: 0px 2px 2px black; */
 }
 
 p {
@@ -46,7 +46,7 @@ p {
 }
 
 h4 {
-    color:white;
+    color: black;
     font-weight: lighter;
     text-align: center;
 }
@@ -63,16 +63,16 @@ h4 {
     margin-left: 2%;
     margin-top: 1.5%;
     padding: 1% 0% 1% 0%;
-    box-shadow: 5px 5px 10px 3px grey;
+    /* box-shadow: 5px 5px 10px 3px grey; */
 }
 
 .home {
-    background-color: rgb(218, 0, 181);
+    background-color: none;
     width: 30em;
     border:  3px solid navy;
     margin-left: 30%;
     margin-top: -1%;
-    box-shadow: 5px 5px 10px 3px grey;
+    /* box-shadow: 5px 5px 10px 3px grey; */
 }
 
 .BlogDetails {
@@ -83,7 +83,7 @@ h4 {
     margin-left: 62%;
     margin-top: -15%;
     padding: 0% 2% 0% 2%;
-    box-shadow: 5px 5px 10px 3px grey;
+    /* box-shadow: 5px 5px 10px 3px grey; */
 }
 
 .Sidebar {
@@ -97,7 +97,7 @@ h4 {
     margin-left: 32%;
     margin-top: -15%;
     padding: 1% 0% 1% 0%;
-    box-shadow: 5px 5px 10px 3px grey;
+    /* box-shadow: 5px 5px 10px 3px grey; */
 }
 
 .categories {
@@ -105,7 +105,7 @@ h4 {
     font-weight: bold;
     text-align: center;
     margin-top: 0%;
-    background-color: rgb(218, 0, 181);
+    background-color: none;
     width: 20em;
     border:  1px solid black ;
     margin-left: -40%;
@@ -117,7 +117,7 @@ h4 {
     font-weight: bold;
     text-align: center;
     margin-top: 0%;
-    background-color: rgb(218, 0, 181);
+    background-color: none;
     width: 20em;
     border:  1px solid black;
     margin-left: 68%;
@@ -146,6 +146,7 @@ h4 {
     border: 2px solid rgb(218, 0, 181);
     box-shadow: 0px 1px 5px 0px grey;
     cursor: pointer;
+    
 }
 
 .component > h2 {
@@ -155,10 +156,15 @@ h4 {
     text-shadow: none;
 }
 
+.component {
+    align-items: center;
+}
+
 .component-slide > h2 {
     font-family: 'Josefin Sans';
-    color: rgb(218, 0, 181);
+    color: navy;
     font-size: 2rem;
+    text-shadow: 1px 2px 4px 3px solid black;
 }
 
 .component-slide > p {
@@ -182,7 +188,7 @@ h4 {
 }
 
 .vl {
-    border-top: 6px solid rgb(218, 0, 181);
+    border-top: 6px solid grey;
     width: 60em;
     margin-top: 5%;
     }

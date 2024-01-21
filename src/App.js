@@ -12,7 +12,7 @@ function App() {
 
       <div className="content">
         <h1 style={{
-          color: "navy",
+          color: "rgb(218, 0, 181)",
           fontWeight: "bolder",
           fontFamily: "arial",
           textAlign: "center",
