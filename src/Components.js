@@ -33,6 +33,11 @@ const Components = () => {
     
     otherServices()
 
+    const handleDelete = (id) => {
+        const filteredComponents = components.filter((component, index) => components.id !== id )
+        setComponents(filteredComponents)
+    }
+
     return ( 
         <div className="component">
             <center>
@@ -41,6 +46,7 @@ const Components = () => {
                 <div className="component-slide" key={component.id}>
                     <h2>{component.title}</h2>
                     <p>By: {component.author}</p>
+                    <button onClick={() => {handleDelete(component.id)}}>Delete</button>
                 </div>
             ))}
             </center>
