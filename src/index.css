@@ -141,11 +141,13 @@ h4 {
 
 .component-slide {
     background-color: none;
-    width: 20em;
-    margin: 15px 0px;
+    width: 30em;
+    padding: 10px 10px 10px 10px;
+    margin-top: 30px;
     border: 2px solid rgb(218, 0, 181);
     box-shadow: 0px 1px 5px 0px grey;
     cursor: pointer;
+    /* border-radius: 100%; */
     
 }
 
@@ -154,10 +156,6 @@ h4 {
     color: black;
     font-size: 1.5rem;
     text-shadow: none;
-}
-
-.component {
-    align-items: center;
 }
 
 .component-slide > h2 {
@@ -192,3 +190,22 @@ h4 {
     width: 60em;
     margin-top: 5%;
     }
+
+    .component-slide > button{
+        font-weight: bold;
+        align-content: center;
+        padding: 10px 20px 10px 20px;
+        color: white;
+        background-color: gray;
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px 1px grey;
+        cursor: pointer;
+
+
+    }
+    
+    .component-slide > button:hover {
+        background-color: red;
+        color: white;
+    }
+    
