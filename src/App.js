@@ -1,4 +1,5 @@
 import BlogDetails from './BlogDetails.js';
+import Components from './Components.js';
 import Home from './Home.js';
 import Navbar from './Navbar.js';
 import Sidebar from './Sidebar.js';
@@ -22,6 +23,7 @@ function App() {
       <BlogDetails />
       <Sidebar/>
       <Toggle />
+      <Components />
       </div>
     </div>
 
