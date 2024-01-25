@@ -1,0 +1,67 @@
+{
+    "courses": [
+        {
+            "title": "Computer Networking",
+            "body": "This is my first course post",
+            "author": "Dr. Femi",  
+            "id": 1
+        },
+        {
+            "title": "System Troubleshooting",
+            "body": "This is my second course post",
+            "author": "Dr. Fele",  
+            "id": 2
+        },
+        {
+            "title": "Hardware Maintenance",
+            "body": "This is my third course post",
+            "author": "Engr. David",  
+            "id": 3
+        },
+        {
+            "title": "Digital Electronics",
+            "body": "This is my fourth course post",
+            "author": "Mr. Oni",  
+            "id": 4
+        },
+        {
+            "title": "Web Technology",
+            "body": "This is my fifth course post",
+            "author": "Dr. Innocent",  
+            "id": 5
+        },
+        {
+            "title": "Management Information System",
+            "body": "This is my sixth course post",
+            "author": "Dr. Olawale",  
+            "id": 6
+        },
+        {
+            "title": "Unified Modeling Language",
+            "body": "This is my seventh course post",
+            "author": "Dr. Adebayo",  
+            "id": 7
+        },
+        {
+            "title": "File Organization",
+            "body": "This is my eighth course post",
+            "author": "Mr. Kazeem",  
+            "id": 8
+        },
+        {
+            "title": "Calculus II",
+            "body": "This is my ninth course post",
+            "author": "Mr. Lamotu",  
+            "id": 9
+        },
+        {
+            "title": "Computer Packages",
+            "body": "This is my tenth course post",
+            "author": "Dr. Victor",  
+            "id": 10
+        }
+     ],
+
+     "students": []
+     
+}

@@ -1,9 +1,9 @@
 const DeleteButton = ({components, handleDelete}) => {
     
     return ( 
-        <div className="component">
+        <div className="DeleteButton">
         <center>
-        <h2>Top Professionals</h2>
+        {/* <h2>Top Professionals</h2> */}
         {components.map((component, index)=>(
             <div className="component-slide" key={component.id}>
                 <h2>{component.title}</h2>
