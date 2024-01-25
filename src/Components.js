@@ -1,38 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DeleteButton from "./DeleteButton";
 
 const Components = () => {
-    const [components, setComponents] = useState(
-        [
-            {id: 1, author: "Dr. Oluwaseun", title: "Graphics Design", body: "lorem ipsum..."},
-            {id: 2, author: "Mr. Emmanuel", title: "Wallpanels", body: "lorem ipsum..."},
-            {id: 3, author: "Miss Bisola", title: "Web Design", body: "lorem ipsum..."},
-            {id: 4, author: "Engr. Tola", title: "Painting", body: "lorem ipsum..."},
-        ]
-    )
+    const [components, setComponents] = useState(null);
 
-    const services = [ 'Artworks', 'Screeding', 'Stickers', 'Frames', 'Flex-Banners', 'Awards', 'Stamp']
+    const [course, setCourse] = useState("> Frontend <");
 
-    const otherServices = () => {
-
-        services.push('Wallpaper')
-
-        services.forEach((service, index) => {
-
-            let output = `The name of service ${index + 1} is ${service}`
-            console.log(output)
-
+    useEffect(() => {
+        fetch("http://localhost:8000/courses")
+        .then((response)=>{
+            return response.json()
         })
-        
-        services.pop()
-        console.log(services)
-        console.log(services.slice(-6))
-        services.splice(5, 0, 'Pencil-Works')
-        console.log(services)
-
-    }
-    
-    otherServices()
+        .then((componentArray)=>{
+            console.log(componentArray)
+            setComponents(componentArray)
+        })
+    }, []); //dependency array
 
     const handleDelete = (id) => {
         console.log('The id of the clicked component is', id)
@@ -41,7 +24,13 @@ const Components = () => {
     }
     
     return ( 
-        <DeleteButton components={components} handleDelete={handleDelete}/>
+        <div className="Components">
+            <h2>My Courses</h2>
+        {components && <DeleteButton components={components} handleDelete={handleDelete}/>}
+        <button onClick={()=>setCourse("> Backend <")}>change course</button>
+        
+        <h2>{course}</h2>
+        </div>
      );
 }
  
