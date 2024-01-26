@@ -229,3 +229,27 @@ h4 {
         background-color: green;
         color: white;
     }
+
+    .loading {
+        cursor: progress;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: x-large;
+        color: rgb(0, 140, 255);
+        border: 2px solid rgb(0, 140, 255);
+        box-shadow: 1px 1px 3px 1px grey;
+        width: fit-content;
+        padding: 20px 20px 20px 20px;
+        margin-left: 32.5%;
+    }
+
+    .error {
+        cursor:help;
+        font-family: 'cursive', monospace;
+        font-size: x-large;
+        color: grey;
+        border: 2px solid red;
+        /* box-shadow: 1px 1px 3px 1px grey; */
+        max-width: 30em;
+        padding: 40px 10px 40px 60px;
+        margin-left: 18.5%;
+    }
