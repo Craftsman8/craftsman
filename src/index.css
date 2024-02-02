@@ -66,15 +66,7 @@ h4 {
     /* box-shadow: 5px 5px 10px 3px grey; */
 }
 
-.home {
-    background-color: none;
-    width: 30em;
-    border:  3px solid navy;
-    margin-left: 30%;
-    margin-top: -1%;
-    /* box-shadow: 5px 5px 10px 3px grey; */
-}
-
+/*
 .BlogDetails {
     background-color: none;
     width: 25em;
@@ -83,10 +75,10 @@ h4 {
     margin-left: 62%;
     margin-top: -15%;
     padding: 0% 2% 0% 2%;
-    /* box-shadow: 5px 5px 10px 3px grey; */
-}
+    box-shadow: 5px 5px 10px 3px grey;
+} */
 
-.Sidebar {
+/* .Sidebar {
     color: black;
     font-size: large;
     font-weight: bold;
@@ -97,7 +89,7 @@ h4 {
     margin-left: 32%;
     margin-top: -15%;
     padding: 1% 0% 1% 0%;
-    /* box-shadow: 5px 5px 10px 3px grey; */
+    box-shadow: 5px 5px 10px 3px grey;
 }
 
 .categories {
@@ -122,16 +114,16 @@ h4 {
     border:  1px solid black;
     margin-left: 68%;
     margin-top: -38.8%;
-}
+} */
 
-.newFeatures h1 {
+.home h1 {
     font-family: 'Tourney', sans-serif;
     font-size: 5rem;
     color: rgb(0, 140, 255);
     text-shadow: 1px 3px 4px black;
 }
 
-.newFeatures h5 {
+.home h5 {
     font-family: 'Josefin Sans';
     font-size: 2rem;
     color: rgb(218, 0, 181);

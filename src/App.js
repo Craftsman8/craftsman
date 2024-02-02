@@ -1,31 +1,26 @@
-import BlogDetails from './BlogDetails.js';
 import Components from './Components.js';
-import Features from './Features.js';
-import Home from './Home.js';
-import Navbar from './Navbar.js';
-import Sidebar from './Sidebar.js';
+import Navbar from './components/Navbar.js';
 import Toggle from './Toggle.js';
+import { Routes, Route } from 'react-router';
+import Home from './components/Home.js';
+import Create from './components/create.js';
+import NotFound from './components/NotFound.js';
+
 
 function App() {
   return (
     <div className="App">
-
-      <div className="content">
-        <h1 style={{
-          color: "rgb(218, 0, 181)",
-          fontWeight: "bolder",
-          fontFamily: "arial",
-          textAlign: "center",
-          marginTop: "1%",
-          textShadow: "0px 2px 2px black",
-        }}>My App Component</h1>
-        </div>
       <Home/>
-      <Navbar />
-      <BlogDetails />
-      <Sidebar/>
+     <Navbar />
+
+     <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/create" element={<Create />} />
+      <Route path="*" element={<NotFound />} />
+
+     </Routes>
+
       <Toggle />
-      <Features/>
       <Components />
     </div>
   );

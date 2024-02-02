@@ -2,11 +2,10 @@
 // <FaPaintBrush />
 
 import { GiPencilBrush } from "react-icons/gi";
-const Features = () => {
+const Home = () => {
     return ( 
-        <div className="newFeatures">
+        <div className="home">
         <center>
-        <div className="vl"></div>
         <h1> <GiPencilBrush className="brush"/> CRAFTSMAN </h1>
         <h5> Arts & Graphics </h5>
         <div className="vl"></div>
@@ -16,4 +15,4 @@ const Features = () => {
      );
 }
  
-export default Features;
+export default Home;
