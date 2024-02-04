@@ -26,15 +26,9 @@ const useFetch = (url) =>{
                 setLoading(false)
             })
         }, 5000)
-    }, []);
+    }, [url]);
 
-    const handleDelete = (id) => {
-        console.log('The id of the clicked component is', id)
-        const filteredComponents = components.filter((component, index) => component.id !== id )
-        setComponents(filteredComponents)
-    }
-
-    return {components, loading, error} = useFetch('http://localhost:8000/courses');
+    return {components, loading, error}
 }
 
 export default useFetch;
