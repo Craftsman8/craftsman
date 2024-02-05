@@ -10,20 +10,20 @@ const BlogDetails = () => {
 
     return ( 
         <div className="blog-details">
-        <h2>This is blog details component - { id }</h2>
+        {!loading && <h2>This is blog details component - { id }</h2>}
+
         { loading && <div className="loading">Your item is been fetched...</div> }
         { error && <div className="error">{error}</div> }
 
         { component && (
         <article>
-            <p style={{
-                marginBottom: "-15px",
-            }}>Course Title</p>
+            <p style={{ margin: "3% 0% 0% 46%" }}>Course Title:</p>
             <h2>{component.title}</h2>
-            <p>written by: {component.author}</p>
+            <p style={{ margin: "0% 0% 0% 45%" }}>Author: {component.author}</p>
             <p style={{
                 fontSize: "2em",
-                marginBottom: "-.5px",
+                marginBottom: "1%",
+                marginLeft: "41%",
 
             }}>Course Overview:</p>
             <div className="article-body">{component.body} </div>

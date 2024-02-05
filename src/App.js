@@ -1,6 +1,4 @@
-import Components from './Components.js';
 import Navbar from './components/Navbar.js';
-import Toggle from './Toggle.js';
 import { Routes, Route } from 'react-router';
 import Home from './components/Home.js';
 import Create from './components/create.js';
@@ -22,9 +20,6 @@ function App() {
       <Route path='*' element={<NotFound />} />
 
      </Routes>
-      
-      <Toggle />
-      <Components />
     </div>
   );
 }

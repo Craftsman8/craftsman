@@ -26,8 +26,9 @@ const Create = () => {
                         
                     </textarea>
                 </label>
+                <button type="submit">Submit</button>
             </form>
-            <button type="submit">Submit</button>
+            
         </div>
      );
 }
