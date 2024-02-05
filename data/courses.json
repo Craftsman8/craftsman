@@ -2,19 +2,19 @@
     "courses": [
         {
             "title": "Computer Networking",
-            "body": "Computer networking involves connecting multiple devices, such as computers and servers, to share resources and information. It enables communication through various technologies like wired (Ethernet) or wireless (Wi-Fi). Key components include routers, switches, and protocols like TCP/IP. Networks can be local (LAN), connecting devices in proximity, or wide (WAN), spanning larger geographic areas. The internet is a global example of a wide network. Security measures like firewalls protect against unauthorized access. Networking facilitates data exchange, resource sharing, and collaborative activities in today's interconnected digital world.",
+            "body": "This is my first course post",
             "author": "Dr. Femi",  
             "id": 1
         },
         {
             "title": "System Troubleshooting",
-            "body": "System troubleshooting is a systematic process aimed at identifying and resolving issues within computer systems. It commences with a thorough understanding of the problem, considering symptoms and error messages. The subsequent phase involves isolating the affected components to discern whether the issue lies in hardware, software, or network elements. Research and analysis play a crucial role, necessitating an exploration of potential causes through documentation, forums, and knowledge bases, as well as an examination of recent changes or updates. Subsequent testing involves the use of diagnostic tools to verify hypotheses and narrow down possibilities. Once the root cause is pinpointed, corrective actions are applied, ranging from software updates to hardware replacements. Verification ensures the effectiveness of the solutions by retesting the system, ensuring it functions without any lingering issues. Comprehensive documentation of the troubleshooting process facilitates knowledge sharing and aids future problem-solving endeavors.",
+            "body": "This is my second course post",
             "author": "Dr. Fele",  
             "id": 2
         },
         {
             "title": "Hardware Maintenance",
-            "body": "Hardware maintenance is the systematic practice of preserving and optimizing the physical components within computer systems. This comprehensive approach involves preventive measures like regular cleaning, inspections, and firmware updates to preempt potential issues. Diagnostic checks using specialized tools are consistently applied to identify and rectify hardware problems proactively. Timely replacement of faulty or outdated components, coupled with regular software and firmware updates, ensures sustained system efficiency. Environmental considerations, such as temperature regulation and adequate ventilation, are integral to preventing overheating and mitigating potential hardware failures. In essence, hardware maintenance is a crucial strategy to enhance the longevity, reliability, and overall performance of computer systems.",
+            "body": "This is my third course post",
             "author": "Engr. David",  
             "id": 3
         },
@@ -60,6 +60,8 @@
             "author": "Dr. Victor",  
             "id": 10
         }
-     ]
+     ],
+
+     "students": []
      
 }

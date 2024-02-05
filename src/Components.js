@@ -1,35 +1,33 @@
-import { useState } from "react";
-import useFetch from "./Hooks/Use-fetch";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import DeleteButton from "./DeleteButton";
 
 const Components = () => {
-    
+    const [components, setComponents] = useState(null);
+
     const [course, setCourse] = useState("> Frontend <");
 
-    const {components, loading, error} = useFetch('http://localhost:8000/courses');
+    useEffect(() => {
+        fetch("http://localhost:8000/courses")
+        .then((response)=>{
+            return response.json()
+        })
+        .then((componentArray)=>{
+            console.log(componentArray)
+            setComponents(componentArray)
+        })
+    }, []); //dependency array
 
+    const handleDelete = (id) => {
+        console.log('The id of the clicked component is', id)
+        const filteredComponents = components.filter((component, index) => component.id !== id )
+        setComponents(filteredComponents)
+    }
+    
     return ( 
         <div className="Components">
             <h2>My Courses</h2>
-            {loading && <div className="loading">Fetching from server...<br></br>This might take some seconds</div> }
-            
-            {error && <div className="error">{error}</div>}
-
-            {components && <div className="run-components">
-            
-                {components.map((component, index)=>(
-                <div className="component-slide" key={component.id}>
-                <Link to={`/components/${component.id}`} style={{
-                    textDecoration: "none",
-                }}>
-                    <h2>{component.title}</h2>
-                    <p>By: {component.author}</p>
-                </Link>
-                </div>
-                ))}
-
-            </div>}
-        <button onClick={()=>setCourse("> Backend <")}>change course</button> 
+        {components && <DeleteButton components={components} handleDelete={handleDelete}/>}
+        <button onClick={()=>setCourse("> Backend <")}>change course</button>
         
         <h2>{course}</h2>
         </div>
