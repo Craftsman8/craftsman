@@ -9,7 +9,7 @@
     height: 2.5em;
     box-shadow: 2px 2px 3px 2px grey;
     cursor: pointer;
-    margin-left: -90%;
+    margin-left: 2%;
     
 }
 
@@ -74,10 +74,17 @@ p {
     border: 4px solid green;
 }
 
-.component > h2 {
+.Components > h2 {
     font-family: 'Josefin Sans';
     color: green;
     font-size: 1.5rem;
+    text-align: center;
+}
+
+.Components a {
+    text-decoration: none;
+    font-size: large;
+    margin-top: 2%;
 }
 
 .component-slide h2 {
@@ -85,11 +92,7 @@ p {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: green;
     cursor: pointer;
-    font-size: 2rem;
-}
-
-.component-slide p {
-    font-family: 'Josefin Sans';
+    font-size: 2.5rem;
 }
 
 .brush {
@@ -160,7 +163,7 @@ p {
         margin-left: 18.5%;
     }
     
-    .home h2 {
+    .homepage > h2 {
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: white;
         background-color: green;
@@ -169,6 +172,7 @@ p {
         border-radius: 10px;
         padding: 10px;
         font-size: 1.5rem;
+        margin: 2% auto;
     }
 
     .create h2 {
@@ -233,21 +237,19 @@ p {
         font-weight: bold;
         font-size: large;
         padding: 10px;
-        background-color: green;
-        color: white;
-        border: 3px solid green ;
+        background-color: white;
+        color: black;
+        border: 3px solid black;
         border-radius: 10px;
         box-shadow: 1px 1px 3px 1px grey;
         cursor: pointer;
-        margin: 0% 0px 0px 45%;
+        margin: 0% 0px 0px 25%;
         width: 10rem;
 
     }
     
     .create button:hover {
-        color: green;
-        background-color: white;
-        border: 3px solid green;
+        filter: invert(100%);
     }
 
     .blog-details > h2 {
@@ -259,6 +261,7 @@ p {
         border-radius: 10px;
         padding: 10px;
         font-size: 1.5rem;
+        margin: 1% auto;
     }
 
     .blog-details article p {
@@ -276,6 +279,7 @@ p {
         padding: 10px;
         font-size: 1.5rem;
         text-decoration: none;
+        margin: 1% auto;
     }
 
     .article-body {
@@ -284,10 +288,9 @@ p {
         text-align: center;
         border: 4px solid green;
         border-radius: 10px;
-        max-width: 50%;
-        height: 10em;
-        margin-bottom: 2%;
-        margin-left: 1%;
+        max-width: 70%;
+        height: fit-content;
+        margin: 1% auto;
         padding: 50px;
         font-size: 2rem;
 

@@ -1,17 +1,14 @@
-import { useState } from "react";
-import useFetch from "./Hooks/Use-fetch";
+import useFetch from "../Hooks/Use-fetch";
 import { Link } from "react-router-dom";
 
 const Components = () => {
     
-    const [course, setCourse] = useState("> Frontend <");
+    const {components, error} = useFetch('http://localhost:8000/courses');
 
-    const {components, loading, error} = useFetch('http://localhost:8000/courses');
 
     return ( 
         <div className="Components">
             <h2>My Courses</h2>
-            {loading && <div className="loading">Fetching from server...<br></br>This might take some seconds</div> }
             
             {error && <div className="error">{error}</div>}
 
@@ -23,15 +20,17 @@ const Components = () => {
                     textDecoration: "none",
                 }}>
                     <h2>{component.title}</h2>
-                    <p>By: {component.author}</p>
+                    <p style={{
+                        fontFamily:"'Gill Sans', 'Gill Sans MT', 'Trebuchet MS'",
+                        marginLeft: "70%",
+                        fontWeight: "600",
+                    }}>Author: {component.author}</p>
                 </Link>
                 </div>
                 ))}
 
             </div>}
-        <button onClick={()=>setCourse("> Backend <")}>change course</button> 
         
-        <h2>{course}</h2>
         </div>
      );
 }
