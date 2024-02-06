@@ -4,13 +4,10 @@
 
 import Components from "./Components";
 import useFetch from "../Hooks/Use-fetch";
-import { useParams } from "react-router";
 
 const Home = () => {
 
-    const { id } = useParams();
-
-    const { loading } = useFetch(`http://localhost:8000/courses/${id}`);
+    const { loading } = useFetch('http://localhost:8000/courses');
     return ( 
         <div className="home">
         
