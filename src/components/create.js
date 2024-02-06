@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router";
 
 const Create = () => {
 
@@ -9,6 +9,23 @@ const Create = () => {
     const [loading, setLoading] = useState(false);
 
     const navigate = useNavigate();
+    const {id} = useParams();
+
+    useEffect(() => {
+        if (id) {
+            fetch(`http://localhost:8000/courses/${id}`)
+            .then((response)=>{
+                return response.json()
+            })
+            .then((data)=>{
+                setTitle(data.title)
+                setAuthor(data.author)
+                setBody(data.body)
+            })
+        }
+    }, [id])
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true)
@@ -18,9 +35,12 @@ const Create = () => {
         const newCourse = { title, author, body }
 
         const postUrl = 'http://localhost:8000/courses'
+        const putUrl = `http://localhost:8000/courses/${id}`
 
-        fetch(postUrl, {
-            method: 'POST',
+        const resolvedUrl = id ? putUrl : postUrl
+
+        fetch(resolvedUrl, {
+            method: id ? 'PUT' : 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(newCourse)
         })
@@ -37,7 +57,9 @@ const Create = () => {
 
     return ( 
         <div className="create">
-            <h2>Add a new course</h2>
+            <h2 style={{textAlign: "center"}}>
+        {id ? `Edit course number ${id}` :  'Add a new course'}
+        </h2>
 
             <form onSubmit={handleSubmit}>
                 <label>
@@ -83,7 +105,10 @@ const Create = () => {
                         
                     </textarea>
                 </label>
-                {!loading && <button type="submit">Submit</button>}
+                {!loading && <button type="submit">
+                {id ? 'Update course' : 'Submit course'}    
+                </button>}
+
                 {loading && <button type="submit" disabled>Processing...</button>}
             </form>
             
