@@ -75,10 +75,11 @@ p {
 }
 
 .Components > h2 {
-    font-family: 'Josefin Sans';
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: green;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
+    cursor: default;
 }
 
 .Components a {
@@ -112,10 +113,10 @@ p {
 }
 
 .vl {
-    border-top: 6px solid green;
+    border-top: 6px solid greenyellow;
     width: 100%;
-    margin-top: 0%;
-    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 2%;
     }
 
     .Components > button{
@@ -162,6 +163,15 @@ p {
         padding: 40px 10px 40px 60px;
         margin-left: 18.5%;
     }
+
+    .homepage h1 {
+        font-family: 'Tourney', monospace;
+        color: green;
+        font-size: 5rem;
+        text-shadow: 1px 2px 3px black;
+        margin: 0 34.5%;
+        cursor: default;
+    }
     
     .homepage > h2 {
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -173,6 +183,7 @@ p {
         padding: 10px;
         font-size: 1.5rem;
         margin: 2% auto;
+        cursor: default;
     }
 
     .create h2 {
@@ -315,4 +326,8 @@ p {
         background-color: black;
         border: 3px solid white;
         color: white;
+    }
+
+    .navbar :link:hover {
+        filter: invert(100%);
     }
