@@ -61,10 +61,10 @@
       "id": "10"
     },
     {
-      "id": "dfd5",
       "title": "Statistics for Computer",
       "author": "Mr. Ayooluwa",
-      "body": "Statistics for computing involves the application of statistical methods and techniques to analyze, interpret, and draw meaningful conclusions from data within the realm of computer science. \nIt plays a pivotal role in various areas, such as data analysis, machine learning, and algorithm optimization. Statistical concepts like probability, regression analysis, and hypothesis testing are integral to making informed decisions in computing, aiding in the development of robust algorithms, efficient system designs, and data-driven insights. Whether handling large datasets, evaluating performance metrics, or validating software models, a solid foundation in statistics equips computing professionals with the essential skills to extract meaningful patterns and make data-driven decisions crucial in the rapidly evolving landscape of technology and information processing."
+      "body": "Statistics for computing involves the application of statistical methods and techniques to analyze, interpret, and draw meaningful conclusions from data within the realm of computer science. \nIt plays a pivotal role in various areas, such as data analysis, machine learning, and algorithm optimization. \nStatistical concepts like probability, regression analysis, and hypothesis testing are integral to making informed decisions in computing, aiding in the development of robust algorithms, efficient system designs, and data-driven insights. Whether handling large datasets, evaluating performance metrics, or validating software models, a solid foundation in statistics equips computing professionals with the essential skills to extract meaningful patterns and make data-driven decisions crucial in the rapidly evolving landscape of technology and information processing.",
+      "id": "11"
     }
   ]
 }

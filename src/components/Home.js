@@ -8,6 +8,12 @@ import useFetch from "../Hooks/Use-fetch";
 const Home = () => {
 
     const { loading } = useFetch('http://localhost:8000/courses');
+
+    const secret = process.env.REACT_APP_API;
+
+    console.log(secret);
+  
+  
     return ( 
         <div className="home">
         
