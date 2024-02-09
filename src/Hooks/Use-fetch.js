@@ -16,7 +16,6 @@ const useFetch = (url) =>{
                 return response.json();
             })
             .then((item)=>{
-                console.log(item)
                 setComponents(item)
                 setLoading(false)
             })
