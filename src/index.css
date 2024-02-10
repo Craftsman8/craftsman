@@ -1,334 +1,313 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Tourney:wght@800&display=swap');
 
-.Button button{
-    color: greenyellow;
-    background-color: green;
-    border:  3px solid greenyellow;
-    border-radius: 20px;
-    width: fit-content;
-    height: 2.5em;
-    box-shadow: 2px 2px 3px 2px grey;
-    cursor: pointer;
-    margin-left: 2%;
-    
-}
-
-.Button button:hover {
-    background-color: greenyellow;
-    color: green;
+.Button button {
+  color: greenyellow;
+  background-color: green;
+  border: 3px solid greenyellow;
+  border-radius: 20px;
+  width: fit-content;
+  height: 2.5em;
+  box-shadow: 2px 2px 3px 2px grey;
+  cursor: pointer;
+  margin-left: 2%;
 }
 
 button.clicked {
-    transition: all 0.4s ease-in-out ;
-    border:  3px solid green;
-    align-content: center;
-    width: fit-content;
-    height: 2.5em;
-    box-shadow: 2px 2px 3px 2px grey;
+  transition: all 0.4s ease-in-out;
+  border: 3px solid green;
+  align-content: center;
+  width: fit-content;
+  height: 2.5em;
+  box-shadow: 2px 2px 3px 2px grey;
 }
 
 h2 {
-    color:black;
-    font-weight: bold;
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 2%;
-    /* text-shadow: 0px 2px 2px black; */
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 2%;
+
+  /* text-shadow: 0px 2px 2px black; */
 }
 
 p {
-    color:black;
-    font-weight: lighter;
-    margin-left: 2%;
+  color: black;
+  font-weight: lighter;
+  margin-left: 2%;
 }
 
 .heading h1 {
-    font-family: 'Tourney', sans-serif;
-    font-size: 5rem;
-    color: green;
-    text-shadow: 1px 3px 4px black;
+  font-family: 'Tourney', sans-serif;
+  font-size: 5rem;
+  color: green;
+  text-shadow: 1px 3px 4px black;
 }
 
 .heading h5 {
-    font-family: 'Josefin Sans';
-    font-size: 2.5rem;
-    color: greenyellow;
-    margin-top: -2.5%;
-    text-shadow: 1px 2px 2px green;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.5rem;
+  color: greenyellow;
+  margin-top: -2.5%;
+  text-shadow: 1px 2px 2px green;
 }
 
 .component-slide {
-    text-decoration: none;
-    background-color: none;
-    width: 50%;
-    padding: 8px;
-    margin-top: 20px;
-    border: 4px solid greenyellow;
-    border-radius: 15px;
+  text-decoration: none;
+  width: 50%;
+  padding: 8px;
+  margin-top: 20px;
+  border: 4px solid greenyellow;
+  border-radius: 15px;
 }
 
-.component-slide:hover{
-    box-shadow: 1px 3px 4px 0px black;
-    cursor: default;
-    background-color: greenyellow;
-    border: 4px solid green;
+.component-slide:hover {
+  box-shadow: 1px 3px 4px 0 black;
+  cursor: default;
+  background-color: greenyellow;
+  border: 4px solid green;
 }
 
 .Components > h2 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: green;
-    font-size: 2rem;
-    text-align: center;
-    cursor: default;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: green;
+  font-size: 2rem;
+  text-align: center;
+  cursor: default;
 }
 
 .Components a {
-    text-decoration: none;
-    font-size: large;
-    margin-top: 2%;
+  text-decoration: none;
+  font-size: large;
+  margin-top: 2%;
 }
 
 .component-slide h2 {
-    text-decoration: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: green;
-    cursor: pointer;
-    font-size: 2.5rem;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: green;
+  cursor: pointer;
+  font-size: 2.5rem;
 }
 
 .brush {
-    border: 3px solid greenyellow;
-    border-radius: 50%;
-    padding: 12px;
-    background-color: green;
-    color: white;
-    font-size: 3rem;
-    cursor: pointer;
-    margin: 2px -2px -10px -100px;
-    /* box-shadow: 2px 5px 8px 1px grey; */
+  border: 3px solid greenyellow;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: green;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 2px -2px -10px -100px;
+
+  /* box-shadow: 2px 5px 8px 1px grey; */
 }
 
 .brush :hover {
-    color: black;
+  color: black;
 }
 
 .vl {
-    border-top: 6px solid greenyellow;
-    width: 100%;
-    margin-top: 1%;
-    margin-bottom: 2%;
-    }
+  border-top: 6px solid greenyellow;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
 
-    .Components > button{
-        font-weight: bold;
-        font-size: large;
-        padding: 10px;
-        color: green;
-        background-color: greenyellow;
-        border-radius: 10px;
-        box-shadow: 1px 1px 3px 1px grey;
-        cursor: pointer;
-        margin-left: 2%;
-        margin-top: 2%;
+.loading {
+  cursor: progress;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+  background-color: green;
+  color: white;
+  border: 3px solid greenyellow;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px grey;
+  width: fit-content;
+  padding: 20px 20px 20px 20px;
+  margin-left: 32.5%;
+}
 
-    }
-    
-    .Components > button:hover {
-        background-color: green;
-        color: white;
-    }
+.error {
+  cursor: help;
+  font-family: 'cursive', monospace;
+  font-size: x-large;
+  color: grey;
+  border: 2px solid red;
 
-    .loading {
-        cursor: progress;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: x-large;
-        background-color: green;
-        color: white;
-        border: 3px solid greenyellow;
-        border-radius: 10px;
-        box-shadow: 1px 1px 3px 1px grey;
-        width: fit-content;
-        padding: 20px 20px 20px 20px;
-        margin-left: 32.5%;
-    }
+  /* box-shadow: 1px 1px 3px 1px grey; */
+  max-width: 30em;
+  padding: 40px 10px 40px 60px;
+  margin-left: 18.5%;
+}
 
-    .error {
-        cursor:help;
-        font-family: 'cursive', monospace;
-        font-size: x-large;
-        color: grey;
-        border: 2px solid red;
-        /* box-shadow: 1px 1px 3px 1px grey; */
-        max-width: 30em;
-        padding: 40px 10px 40px 60px;
-        margin-left: 18.5%;
-    }
+.homepage h1 {
+  font-family: 'Tourney', monospace;
+  color: green;
+  font-size: 5rem;
+  text-shadow: 1px 2px 3px black;
+  margin: 0 34.5%;
+  cursor: default;
+}
 
-    .homepage h1 {
-        font-family: 'Tourney', monospace;
-        color: green;
-        font-size: 5rem;
-        text-shadow: 1px 2px 3px black;
-        margin: 0 34.5%;
-        cursor: default;
-    }
-    
-    .homepage > h2 {
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: white;
-        background-color: green;
-        width: fit-content;
-        border: 4px solid greenyellow;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 1.5rem;
-        margin: 2% auto;
-        cursor: default;
-    }
+.homepage > h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  background-color: green;
+  width: fit-content;
+  border: 4px solid greenyellow;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 2% auto;
+  cursor: default;
+}
 
-    .create h2 {
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: white;
-        background-color: green;
-        width: fit-content;
-        border: 4px solid greenyellow;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 1.5rem;
-        margin: 0 auto;
-    }
+.create h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  background-color: green;
+  width: fit-content;
+  border: 4px solid greenyellow;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
 
-    .create form {
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: white;
-        background-color: green;
-        width: 50%;
-        border: 4px solid greenyellow;
-        border-radius: 10px;
-        padding: 30px 2px 30px 150px;
-        font-size: 1.5rem;
-        margin: 3% auto;
-    }
+.create form {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  background-color: green;
+  width: 50%;
+  border: 4px solid greenyellow;
+  border-radius: 10px;
+  padding: 30px 2px 30px 150px;
+  font-size: 1.5rem;
+  margin: 3% auto;
+}
 
-    .create form input {
-        border: 3px solid greenyellow;
-        border-radius: 8px;
-        margin: 1% auto;
-        padding: 8px;
-        width: 70%;
-        color: green;
-        font-size: 1rem;
-        font-weight: 600;
-    }
+.create form input {
+  border: 3px solid greenyellow;
+  border-radius: 8px;
+  margin: 1% auto;
+  padding: 8px;
+  width: 70%;
+  color: green;
+  font-size: 1rem;
+  font-weight: 600;
+}
 
-    .create form select {
-        border: 3px solid greenyellow;
-        border-radius: 8px;
-        margin: 1% auto;
-        padding: 8px;
-        width: 73%;
-        color: green;
-        font-size: 1rem;
-        font-weight: 600;
-    }
+.create form select {
+  border: 3px solid greenyellow;
+  border-radius: 8px;
+  margin: 1% auto;
+  padding: 8px;
+  width: 73%;
+  color: green;
+  font-size: 1rem;
+  font-weight: 600;
+}
 
-    .create form textarea {
-        border: 3px solid greenyellow;
-        border-radius: 8px;
-        margin: 1% auto;
-        padding: 8px;
-        width: 70%;
-        height: 10em;
-        color: green;
-        font-size: 1rem;
-        font-weight: 600;
-    }
+.create form textarea {
+  border: 3px solid greenyellow;
+  border-radius: 8px;
+  margin: 1% auto;
+  padding: 8px;
+  width: 70%;
+  height: 10em;
+  color: green;
+  font-size: 1rem;
+  font-weight: 600;
+}
 
-    .create button{
-        font-weight: bold;
-        font-size: large;
-        padding: 10px;
-        background-color: white;
-        color: black;
-        border: 3px solid black;
-        border-radius: 10px;
-        box-shadow: 1px 1px 3px 1px grey;
-        cursor: pointer;
-        margin: 0% 0px 0px 25%;
-        width: 10rem;
+.create button {
+  font-weight: bold;
+  font-size: large;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px grey;
+  cursor: pointer;
+  margin: 0% 0 0 25%;
+  width: 10rem;
+}
 
-    }
-    
-    .create button:hover {
-        filter: invert(100%);
-    }
+.blog-details button {
+  font-weight: bold;
+  font-size: large;
+  padding: 11px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  border: 3px solid green;
+  box-shadow: 1px 1px 3px 1px grey;
+  cursor: pointer;
+  margin-left: 2%;
+  width: 10rem;
+}
 
-    .blog-details > h2 {
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: white;
-        background-color: green;
-        width: fit-content;
-        border: 4px solid greenyellow;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 1.5rem;
-        margin: 1% auto;
-    }
+.create button:hover {
+  filter: invert(100%);
+}
 
-    .blog-details article p {
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: large;
-        font-weight: bold;
-    }
+.blog-details > h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  background-color: green;
+  width: fit-content;
+  border: 4px solid greenyellow;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 1% auto;
+}
 
-    .blog-details article h2 {
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: green;
-        width: fit-content;
-        border: 4px solid greenyellow;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 1.5rem;
-        text-decoration: none;
-        margin: 1% auto;
-    }
+.blog-details article p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
 
-    .article-body {
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: palegoldenrod;
-        text-align: center;
-        border: 4px solid green;
-        border-radius: 10px;
-        max-width: 70%;
-        height: fit-content;
-        margin: 2% auto;
-        padding: 50px;
-        font-size: 2rem;
-    }
+.blog-details article h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: green;
+  width: fit-content;
+  border: 4px solid greenyellow;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 1% auto;
+}
 
+.article-body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: palegoldenrod;
+  text-align: center;
+  border: 4px solid green;
+  border-radius: 10px;
+  max-width: 70%;
+  height: 15em;
+  margin: 2% auto;
+  padding: 70px;
+  font-size: 2rem;
+}
 
-    .blog-details button{
-        font-weight: bold;
-        font-size: large;
-        padding: 11px;
-        background-color: red;
-        color: white;
-        border-radius: 10px;
-        border: 3px solid green;
-        box-shadow: 1px 1px 3px 1px grey;
-        cursor: pointer;
-        margin-left: 2%;
-        width: 10rem;
+.blog-details button:hover {
+  background-color: black;
+  border: 3px solid white;
+  color: white;
+}
 
-    }
-    
-    .blog-details button:hover {
-        background-color: black;
-        border: 3px solid white;
-        color: white;
-    }
+.navbar :link:hover {
+  filter: invert(100%);
+}
 
-    .navbar :link:hover {
-        filter: invert(100%);
-    }
+.Button button:hover {
+  background-color: greenyellow;
+  color: green;
+}

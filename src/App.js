@@ -1,26 +1,25 @@
-import Navbar from './components/Navbar.js';
 import { Routes, Route } from 'react-router';
-import Home from './components/Home.js';
-import Create from './components/create.js';
-import NotFound from './components/NotFound.js';
-import About from './components/About-us.js';
-import BlogDetails from './components/BlogDetails.js';
-
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Create from './components/create';
+import NotFound from './components/NotFound';
+import About from './components/About-us';
+import BlogDetails from './components/BlogDetails';
 
 function App() {
   return (
     <div className="App">
-     <Navbar />
+      <Navbar />
 
-     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/create' element={<Create />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/components/:id' element={<BlogDetails />} />
-      <Route path='/edit/:id' element={<Create />} />
-      <Route path='*' element={<NotFound />} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/components/:id" element={<BlogDetails />} />
+        <Route path="/edit/:id" element={<Create />} />
+        <Route path="*" element={<NotFound />} />
 
-     </Routes>
+      </Routes>
     </div>
   );
 }
