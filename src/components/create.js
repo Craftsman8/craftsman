@@ -7,26 +7,25 @@ const Create = () => {
   const [body, setBody] = useState('');
   const [loading, setLoading] = useState(false);
 
-    const navigate = useNavigate();
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setLoading(true)
-        
-        setTimeout(()=>{
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-        const newCourse = { title, author, body }
+    setTimeout(() => {
+      const newCourse = { title, author, body };
 
-        const postUrl = 'http://localhost:8000/courses'
+      const postUrl = 'http://localhost:8000/courses';
 
-        fetch(postUrl, {
-            method: 'POST',
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(newCourse)
-        })
-        .then((response)=>{
-            response.json()
-            setLoading(false)
-            navigate('/')
+      fetch(postUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newCourse),
+      })
+        .then((response) => {
+          response.json();
+          setLoading(false);
+          navigate('/');
         })
         .catch(() => {
           // console.log(error);
@@ -34,60 +33,61 @@ const Create = () => {
     }, 3000);
   };
 
-    return ( 
-        <div className="create">
-            <h2>Add a new course</h2>
+  return (
+    <div className="create">
+      <h2>Add a new course</h2>
 
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Course Title:<br></br>
-                    <input 
-                    type="text" 
-                    required
-                    value={title}
-                    onChange={(e)=>setTitle(e.target.value)}
-                    />
-                </label>
-                <br></br>
-                <label>
-                    Course Author:<br></br>
-                    <select 
-                    value={author}
-                    onChange={(e)=>setAuthor(e.target.value)}
-                    >
-                        <option value="Dr. Femi">Dr. Femi</option>
-                        <option value="Dr. Fele">Dr. Fele</option>
-                        <option value="Engr. David">Engr. David</option>
-                        <option value="Mr. Oni">Mr. Oni</option>
-                        <option value="Dr. Innocent">Dr. Innocent</option>
-                        <option value="Dr. Olawale">Dr. Olawale</option>
-                        <option value="Dr. Adebayo">Dr. Adebayo</option>
-                        <option value="Mr. Kazeem">Mr. Kazeem</option>
-                        <option value="Mr. Lamotu">Mr. Lamotu</option>
-                        <option value="Dr. Victor">Dr. Victor</option>
-                        <option value="Mr. Oluwatobi">Mr. Oluwatobi</option>
-                        <option value="Mr. Oluwaseun">Mr. Oluwaseun</option>
-                        <option value="Mr. Ayooluwa">Mr. Ayooluwa</option>
-                        <option value="Mr. Emmanuel">Mr. Emmanuel</option>
-                    </select>
-                </label>
-                <br></br>
-                <label>
-                    Course Body:<br></br>
-                    <textarea
-                    value={body}
-                    rows={7}
-                    onChange={(e)=>setBody(e.target.value)}
-                    >
-                        
-                    </textarea>
-                </label>
-                {!loading && <button type="submit">Submit</button>}
-                {loading && <button type="submit" disabled>Processing...</button>}
-            </form>
-            
-        </div>
-     );
-}
- 
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="title">
+          Course Title:
+          <br />
+          <input
+            type="text"
+            required
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </label>
+        <br />
+        <label htmlFor="author">
+          Course Author:
+          <br />
+          <select
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+          >
+            <option value="Dr. Femi">Dr. Femi</option>
+            <option value="Dr. Fele">Dr. Fele</option>
+            <option value="Engr. David">Engr. David</option>
+            <option value="Mr. Oni">Mr. Oni</option>
+            <option value="Dr. Innocent">Dr. Innocent</option>
+            <option value="Dr. Olawale">Dr. Olawale</option>
+            <option value="Dr. Adebayo">Dr. Adebayo</option>
+            <option value="Mr. Kazeem">Mr. Kazeem</option>
+            <option value="Mr. Lamotu">Mr. Lamotu</option>
+            <option value="Dr. Victor">Dr. Victor</option>
+            <option value="Mr. Oluwatobi">Mr. Oluwatobi</option>
+            <option value="Mr. Oluwaseun">Mr. Oluwaseun</option>
+            <option value="Mr. Ayooluwa">Mr. Ayooluwa</option>
+            <option value="Mr. Emmanuel">Mr. Emmanuel</option>
+          </select>
+        </label>
+        <br />
+        <label htmlFor="body">
+          Course Body:
+          <br />
+          <textarea
+            value={body}
+            rows={7}
+            onChange={(e) => setBody(e.target.value)}
+          />
+        </label>
+        {!loading && <button type="submit">Submit</button>}
+        {loading && <button type="submit" disabled>Processing...</button>}
+      </form>
+
+    </div>
+  );
+};
+
 export default Create;
