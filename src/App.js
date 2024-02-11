@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Help from './components/Help';
 import Services from './components/Services';
 import Settings from './components/Settings';
+import Options from './components/Options';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/create" element={<Create />} />
         <Route path="/about-us" element={<About />} />
+        <Route path="/options" element={<Options />} />
         <Route path="/components/:id" element={<BlogDetails />} />
         <Route path="/edit/:id" element={<Create />} />
         <Route path="*" element={<NotFound />} />

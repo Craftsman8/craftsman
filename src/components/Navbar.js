@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { CiSearch } from 'react-icons/ci';
+import { SlOptions } from 'react-icons/sl';
 // import { GiPencilBrush } from 'react-icons/gi';
 
 const Navbar = () => (
@@ -17,9 +19,13 @@ const Navbar = () => (
       {/* <h1> <GiPencilBrush className="brush"/> CRAFTSMAN </h1>
           <h5> Arts & Graphics </h5> */}
     </div>
+    <Link to="/options"><SlOptions className="options-icon" /></Link>
     {/* <div className="vl" /> */}
     <div className="search">
-      <center><input type="text" placeholder="search" /></center>
+      <center>
+        <CiSearch className="search-icon" />
+        <input type="text" placeholder="search" style={{ border: 'none' }} />
+      </center>
     </div>
     <div className="wrapper">
       <Link to="/" style={{ textDecoration: 'none' }}><div className="home">Home</div></Link>
