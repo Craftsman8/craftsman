@@ -53,23 +53,23 @@ p {
   text-shadow: 1px 2px 2px green;
 }
 
-.component-slide {
+.course-slide {
   text-decoration: none;
   width: 50%;
   padding: 8px;
-  margin-top: 20px;
+  margin: 20px auto;
   border: 4px solid greenyellow;
   border-radius: 15px;
 }
 
-.component-slide:hover {
+.course-slide:hover {
   box-shadow: 1px 3px 4px 0 black;
   cursor: default;
   background-color: greenyellow;
   border: 4px solid green;
 }
 
-.Components > h2 {
+.courses > h2 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: green;
   font-size: 2rem;
@@ -77,13 +77,13 @@ p {
   cursor: default;
 }
 
-.Components a {
+.courses a {
   text-decoration: none;
   font-size: large;
   margin-top: 2%;
 }
 
-.component-slide h2 {
+.course-slide h2 {
   text-decoration: none;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: green;
@@ -310,4 +310,102 @@ p {
 .Button button:hover {
   background-color: greenyellow;
   color: green;
+}
+
+.Navbar .wrapper {
+  text-align: center;
+  width: 95%;
+  margin: 1em auto 10%;
+  text-decoration: none;
+  border-top: 3px solid green;
+  border-bottom: 3px solid green;
+  border-radius: 7px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(203, 253, 203);
+}
+
+.wrapper .home {
+  text-decoration: none;
+  color: greenyellow;
+  background-color: green;
+  border-radius: 5px;
+  width: 6em;
+  padding: 7px;
+}
+
+.wrapper .services {
+  text-decoration: none;
+  color: greenyellow;
+  background-color: green;
+  border-radius: 5px;
+  width: 6em;
+  padding: 7px;
+}
+
+.wrapper .courses {
+  text-decoration: none;
+  color: greenyellow;
+  background-color: green;
+  border-radius: 5px;
+  width: 6em;
+  padding: 7px;
+}
+
+.wrapper .create {
+  text-decoration: none;
+  color: greenyellow;
+  background-color: green;
+  border-radius: 5px;
+  width: 6em;
+  padding: 7px;
+}
+
+.wrapper .about {
+  text-decoration: none;
+  color: greenyellow;
+  background-color: green;
+  border-radius: 5px;
+  width: 6em;
+  padding: 7px;
+}
+
+.wrapper .contact {
+  text-decoration: none;
+  color: greenyellow;
+  background-color: green;
+  border-radius: 5px;
+  width: 6em;
+  padding: 7px;
+}
+
+.wrapper .settings {
+  text-decoration: none;
+  color: greenyellow;
+  background-color: green;
+  border-radius: 5px;
+  width: 6em;
+  padding: 7px;
+}
+
+.wrapper .help {
+  text-decoration: none;
+  color: greenyellow;
+  background-color: green;
+  border-radius: 5px;
+  width: 6em;
+  padding: 7px;
+}
+
+.search {
+  margin: -5% auto 3%;
+}
+
+.Navbar .search input {
+  width: 40%;
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: 7px;
 }

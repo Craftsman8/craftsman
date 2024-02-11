@@ -13,7 +13,6 @@ const Home = () => {
 
   return (
     <div className="home">
-
       {loading && (
         <div className="loading">
           Fetching from server...

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router';
 
 const Create = () => {
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  const [author, setAuthor] = useState('Mr. Ayooluwa');
   const [body, setBody] = useState('');
   const [loading, setLoading] = useState(false);
 
