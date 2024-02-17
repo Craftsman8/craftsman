@@ -1,11 +1,25 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router';
+import { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router';
 
 const Create = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('Mr. Ayooluwa');
   const [body, setBody] = useState('');
   const [loading, setLoading] = useState(false);
+
+  const { id } = useParams();
+
+  useEffect(() => {
+    if (id) {
+      fetch(`http://localhost:8000/courses/${id}`)
+        .then((res) => res.json())
+        .then((data) => {
+          setTitle(data.title);
+          setAuthor(data.author);
+          setBody(data.body);
+        });
+    }
+  }, [id]);
 
   const navigate = useNavigate();
   const handleSubmit = (e) => {
@@ -16,9 +30,12 @@ const Create = () => {
       const newCourse = { title, author, body };
 
       const postUrl = 'http://localhost:8000/courses';
+      const putUrl = `http://localhost:8000/courses/${id}`;
 
-      fetch(postUrl, {
-        method: 'POST',
+      const resolvedUrl = id ? putUrl : postUrl;
+
+      fetch(resolvedUrl, {
+        method: id ? 'PUT' : 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newCourse),
       })
@@ -27,16 +44,15 @@ const Create = () => {
           setLoading(false);
           navigate('/');
         })
-        .catch(() => {
-          // console.log(error);
+        .catch((error) => {
+          Error(error);
         });
     }, 3000);
   };
 
   return (
     <div className="create">
-      <h2>Add a new course</h2>
-
+      <h2>{id ? `Edit course number ${id}` : 'Add a new course'}</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">
           Course Title:
@@ -82,8 +98,12 @@ const Create = () => {
             onChange={(e) => setBody(e.target.value)}
           />
         </label>
-        {!loading && <button type="submit">Submit</button>}
-        {loading && <button type="submit" disabled>Processing...</button>}
+        {!loading && (
+        <button type="submit">
+          {id ? 'Update your course' : 'Submit a course'}
+        </button>
+        )}
+        {loading && <button type="submit" disabled>Processing your request...</button>}
       </form>
 
     </div>

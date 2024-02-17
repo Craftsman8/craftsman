@@ -1,23 +1,11 @@
 import { Link } from 'react-router-dom';
-import useFetch from '../Hooks/Use-fetch';
+import PropTypes from 'prop-types';
 
-const Courses = () => {
-  const { components, error, loading } = useFetch('http://localhost:8000/courses');
+const Courses = ({ components }) => (
+  <div className="courses">
+    <h2>My Courses</h2>
 
-  return (
-    <div className="courses">
-      {loading && (
-      <div className="loading">
-        Fetching from server...
-        <br />
-        This might take some seconds
-      </div>
-      )}
-      {!loading && <h2>My Courses</h2>}
-
-      {error && <div className="error">{error}</div>}
-
-      {components && (
+    {components && (
       <div className="run-course">
 
         {components.map((component) => (
@@ -44,10 +32,19 @@ const Courses = () => {
         ))}
 
       </div>
-      )}
+    )}
 
-    </div>
-  );
+  </div>
+);
+Courses.propTypes = {
+  components: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      author: PropTypes.string.isRequired,
+      body: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+    }),
+  ).isRequired,
 };
 
 export default Courses;

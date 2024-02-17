@@ -1,10 +1,10 @@
-// import { configureStore } from '@reduxjs/toolkit';
-// import componentsReducer from './components/componentsSlice';
+import { configureStore } from '@reduxjs/toolkit';
+import coursesReducer from './courses/coursesSlice';
 
-// const store = configureStore({
-//     reducer: {
-//         components: componentsReducer,
-//     },
-// });
+const store = configureStore({
+  reducer: {
+    courses: coursesReducer,
+  },
+});
 
-// export default store;
+export default store;

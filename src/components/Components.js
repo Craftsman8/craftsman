@@ -1,8 +1,7 @@
 const Components = () => {
-  const count = '12';
+  const count = '2024';
   return (
     <div className="components">
-      <h2>Componets</h2>
       <p>{count}</p>
     </div>
   );
