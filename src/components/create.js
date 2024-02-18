@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router';
+import { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router';
 
 const Create = () => {
   const [title, setTitle] = useState('');
@@ -8,6 +8,19 @@ const Create = () => {
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
+  const { id } = useParams();
+
+  useEffect(() => {
+    if (id) {
+      fetch(`http://localhost:8000/courses/${id}`)
+        .then((response) => response.json())
+        .then((data) => {
+          setTitle(data.title);
+          setAuthor(data.author);
+          setBody(data.body);
+        });
+    }
+  }, [id]);
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -16,9 +29,12 @@ const Create = () => {
       const newCourse = { title, author, body };
 
       const postUrl = 'http://localhost:8000/courses';
+      const putUrl = `http://localhost:8000/courses/${id}`;
 
-      fetch(postUrl, {
-        method: 'POST',
+      const resolvedUrl = id ? putUrl : postUrl;
+
+      fetch(resolvedUrl, {
+        method: id ? 'PUT' : 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newCourse),
       })
@@ -28,14 +44,15 @@ const Create = () => {
           navigate('/');
         })
         .catch(() => {
-          // console.log(error);
         });
     }, 3000);
   };
 
   return (
     <div className="create">
-      <h2>Add a new course</h2>
+      <h2>
+        {id ? `Edit course number - ${id}` : 'Add a new course'}
+      </h2>
 
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">
@@ -46,6 +63,7 @@ const Create = () => {
             required
             value={title}
             onChange={(e) => setTitle(e.target.value)}
+            id="courseTitle"
           />
         </label>
         <br />
@@ -55,6 +73,7 @@ const Create = () => {
           <select
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
+            id="courseAuthor"
           >
             <option value="Dr. Femi">Dr. Femi</option>
             <option value="Dr. Fele">Dr. Fele</option>
@@ -80,9 +99,14 @@ const Create = () => {
             value={body}
             rows={7}
             onChange={(e) => setBody(e.target.value)}
+            id="courseBody"
           />
         </label>
-        {!loading && <button type="submit">Submit</button>}
+        {!loading && (
+        <button type="submit">
+          {id ? 'Update your blog' : 'Submit a blog'}
+        </button>
+        )}
         {loading && <button type="submit" disabled>Processing...</button>}
       </form>
 

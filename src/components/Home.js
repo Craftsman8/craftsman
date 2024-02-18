@@ -1,6 +1,3 @@
-// import { FaPaintBrush } from "react-icons/fa";
-// <FaPaintBrush />
-
 import Components from './Components';
 import useFetch from '../Hooks/Use-fetch';
 
